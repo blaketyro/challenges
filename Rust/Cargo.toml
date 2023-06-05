@@ -1,0 +1,15 @@
+[package]
+name = "challenges"
+version = "0.1.0"
+edition = "2021"
+
+
+# Need bin section to avoid Rust/src folder to keep the Language/Website/Challenge structure.
+[[bin]]
+name = "main"
+path = "main.rs"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# [dependencies]
