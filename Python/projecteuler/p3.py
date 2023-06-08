@@ -1,8 +1,12 @@
 # https://projecteuler.net/problem=3
 
+from functools import cache
+
+
+@cache
 def is_prime(n):
     if n % 2 == 0:
-        return False
+        return n == 2
     # if n wasn't divisible by 2, then it can't be divisible by even, so skip those
     for i in range(3, int(n**0.5) + 1, 2):
         if n % i == 0:
@@ -24,4 +28,5 @@ def solve():
     print(largest_prime_factor(600851475143))
 
 
-solve()
+if __name__ == "__main__":
+    solve()
